@@ -15,15 +15,13 @@ import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [
-    BrowserModule,
-    IonicModule.forRoot(),
-    AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireDatabaseModule,
-    AngularFirestoreModule,
-    AngularFireStorageModule,
-    AppRoutingModule,
-  ],
+  imports: [BrowserModule,
+     IonicModule.forRoot(),
+     AngularFireModule.initializeApp(environment.firebaseConfig),
+     AngularFireDatabaseModule,
+     AngularFirestoreModule,
+     AngularFireStorageModule,
+      AppRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

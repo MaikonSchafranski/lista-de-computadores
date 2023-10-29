@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { AngularFireStorage } from '@angular/fire/compat/storage';
 import { finalize } from 'rxjs/operators';
-import { Computadores } from 'src/app/model/entity/Computadores';
+import { Computadores } from 'src/app/entity/Computadores';
 
 @Injectable({
   providedIn: 'root',

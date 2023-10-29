@@ -1,8 +1,8 @@
-import { FirebaseService } from '../../../model/service/firebase.service';
+import { FirebaseService } from './../../model/service/firebase.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
-import { Computadores } from 'src/app/model/entity/Computadores';
+import { Computadores } from 'src/app/entity/Computadores';
 
 @Component({
   selector: 'app-detalhar',
@@ -103,9 +103,9 @@ export class DetalharPage implements OnInit {
     });
   }
 
-  voltar() {
-    this.router.navigate(['/home']);
-  }
+  voltar(){
+    this.router.navigate(['/home'])
+   }
   async presentConfirmAlert(subHeader: string, message: string) {
     const alert = await this.alertController.create({
       header: 'Cadastro de Computadores',

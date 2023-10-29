@@ -1,9 +1,8 @@
 import { Component, Renderer2 } from '@angular/core';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
-import { Computadores } from 'src/app/model/entity/Computadores';
+import { Computadores } from 'src/app/entity/Computadores';
 import { FirebaseService } from 'src/app/model/service/firebase.service';
-
 
 @Component({
   selector: 'app-home',
